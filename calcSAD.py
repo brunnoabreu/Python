@@ -62,17 +62,18 @@ mat = [ [ [0 for i in xrange(heightMat)] for j in xrange(widthMat) ] for k in xr
 
 #geracao da matriz e insercao no arquivo
 arq = open("file.txt", "w")
-
 genwrite_rand(arq)
-
 arq.close()
+
+print_mat(mat)
 
 #leitura da matriz do arquivo
 arq = open("file.txt", "r")
-
 get_from_file(mat, arq)
 
 print "SAD = " + str(calc_SAD(mat))
 print "SSE = " + str(calc_SSE(mat))
 
 arq.close()
+
+print_mat(mat)
