@@ -17,6 +17,7 @@ def genwrite_rand(arq):
 			arq.write(" " + str(a))
 		arq.write("\n")
 
+
 def get_from_file(mat, arq):
 	width = 0
 	height = 0
@@ -55,6 +56,7 @@ def print_mat(mat):
 				print str(mat[x][z][y]) + " "
 			print "\n"
 		print "\n\n\n"
+
 
 mat = [ [ [0 for i in xrange(heightMat)] for j in xrange(widthMat) ] for k in xrange(numMat) ]
 
