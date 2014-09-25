@@ -1,8 +1,15 @@
 inArq = open("out.txt","r")
-outArq = open("outF.txt","w")
 
 for lines in inArq:
-	for words in lines:
+	if lines == 46:
+		for words in lines.split():
+			
+	elif lines == 64:
+		for words in lines.split():
+			
+	elif lines == 66:
+		for words in lines.split():
+			
 
 inArq.close()
 outArq.close()
